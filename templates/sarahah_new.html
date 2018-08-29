@@ -1,0 +1,9 @@
+{% extends 'base.html'%}
+{% block content%}
+<form method="post">
+    {% csrf_token %}
+    Secret: <input type="text" name="secret">
+    User: <input type="text" name="forwhm">
+    <button type='submit'>Post</button>
+</form>
+{% endblock %}
